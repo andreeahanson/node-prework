@@ -43,7 +43,7 @@ getAllMessages = (response) => {
 }
 
 addMessage = (newMessage, response) => {
-  response.writeHead(200, {
+  response.writeHead(201, {
     "Content-Type": "application/json"
   });
   messages = [...messages, newMessage];
